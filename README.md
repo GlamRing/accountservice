@@ -1,2 +1,2 @@
 # Bypass utility
-Small utility to disable b
+Small utility to disable bootrom protection(sl
