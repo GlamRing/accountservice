@@ -2,4 +2,4 @@
 Small utility to disable bootrom protection(sla and daa)
 
 ## Payloads
-https://github.com
+https://github.com/MTK-bypass/exploits_
