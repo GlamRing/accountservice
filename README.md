@@ -5,4 +5,6 @@ Small utility to disable bootrom protection(sla and daa)
 https://github.com/MTK-bypass/exploits_collection
 
 ## Usage on Windows
-Skip steps 1-3 afte
+Skip steps 1-3 after first usage
+
+1. Install [
