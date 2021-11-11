@@ -7,4 +7,4 @@ https://github.com/MTK-bypass/exploits_collection
 ## Usage on Windows
 Skip steps 1-3 after first usage
 
-1. Install [python (64-bit)](https://www.python.org/download
+1. Install [python (64-bit)](https://www.python.org/downloads)(select "Add Py
