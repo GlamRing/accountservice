@@ -11,4 +11,6 @@ Skip steps 1-3 after first usage
 2. Install [UsbDk (64-bit)](https://github.com/daynix/UsbDk/releases)
 3. Install pyusb, json5 with command:
 ```
-pip
+pip install pyusb json5
+```
+4.
