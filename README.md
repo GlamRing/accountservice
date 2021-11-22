@@ -13,4 +13,5 @@ Skip steps 1-3 after first usage
 ```
 pip install pyusb json5
 ```
-4. Run this command and connect your powered off phone with volume+ button, you should get "Protection d
+4. Run this command and connect your powered off phone with volume+ button, you should get "Protection disabled" at the end
+`
