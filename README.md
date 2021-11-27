@@ -17,4 +17,4 @@ pip install pyusb json5
 ```
 python main.py
 ```
-5. After that, with
+5. After that, without disconnecting phon
