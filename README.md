@@ -17,4 +17,7 @@ pip install pyusb json5
 ```
 python main.py
 ```
-5. After that, without disconnecting phon
+5. After that, without disconnecting phone, run SP Flash Tool
+
+
+## 
