@@ -20,4 +20,5 @@ python main.py
 5. After that, without disconnecting phone, run SP Flash Tool
 
 
-## 
+## Usage on Linux
+Ski
