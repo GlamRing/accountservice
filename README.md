@@ -21,4 +21,4 @@ python main.py
 
 
 ## Usage on Linux
-Ski
+Skip steps 1-2 after f
