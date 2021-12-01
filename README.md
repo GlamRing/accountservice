@@ -21,4 +21,5 @@ python main.py
 
 
 ## Usage on Linux
-Skip steps 1-2 after f
+Skip steps 1-2 after first usage
+To use k
