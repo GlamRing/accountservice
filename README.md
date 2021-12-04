@@ -22,4 +22,4 @@ python main.py
 
 ## Usage on Linux
 Skip steps 1-2 after first usage
-To use k
+To use kamakiri you need [FireISO](
