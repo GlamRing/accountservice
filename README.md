@@ -22,4 +22,4 @@ python main.py
 
 ## Usage on Linux
 Skip steps 1-2 after first usage
-To use kamakiri you need [FireISO](https://github.com/amonet-kamakiri/fireiso/releases) or [this patch](https:/
+To use kamakiri you need [FireISO](https://github.com/amonet-kamakiri/fireiso/releases) or [this patch](https://github.com/a
