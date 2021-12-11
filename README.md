@@ -24,4 +24,4 @@ python main.py
 Skip steps 1-2 after first usage
 To use kamakiri you need [FireISO](https://github.com/amonet-kamakiri/fireiso/releases) or [this patch](https://github.com/amonet-kamakiri/kamakiri/blob/master/kernel.patch) for your kernel
 
-Prebuilt kernels for various distros are available [here](https://gi
+Prebuilt kernels for various distros are available [here](https://github.com/amonet-kamakiri/pr
