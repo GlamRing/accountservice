@@ -27,4 +27,4 @@ To use kamakiri you need [FireISO](https://github.com/amonet-kamakiri/fireiso/re
 Prebuilt kernels for various distros are available [here](https://github.com/amonet-kamakiri/prebuilt-kernels)
 
 1. Install python
-2. Install pyu
+2. Install pyusb, json5 as root with comm
