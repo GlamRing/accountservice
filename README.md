@@ -31,4 +31,4 @@ Prebuilt kernels for various distros are available [here](https://github.com/amo
 ```
 pip install pyusb json5
 ```
-3.
+3. Run this command as root an
