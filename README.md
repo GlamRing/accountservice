@@ -33,4 +33,6 @@ pip install pyusb json5
 ```
 3. Run this command as root and connect your powered off phone with volume+ button, you should get "Protection disabled" at the end
 ```
-.
+./main.py
+```
+4. After that
