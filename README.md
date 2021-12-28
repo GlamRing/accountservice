@@ -31,4 +31,6 @@ Prebuilt kernels for various distros are available [here](https://github.com/amo
 ```
 pip install pyusb json5
 ```
-3. Run this command as root and connect your powered off phone with volume+ button, you should get "Protectio
+3. Run this command as root and connect your powered off phone with volume+ button, you should get "Protection disabled" at the end
+```
+.
