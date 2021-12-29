@@ -35,4 +35,4 @@ pip install pyusb json5
 ```
 ./main.py
 ```
-4. After that
+4. After that, without disconnecting phone, 
