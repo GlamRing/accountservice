@@ -35,4 +35,7 @@ pip install pyusb json5
 ```
 ./main.py
 ```
-4. After that, without disconnecting phone, run SP Flash Tool in UART 
+4. After that, without disconnecting phone, run SP Flash Tool in UART Connection mode
+
+## Credits
+- [
