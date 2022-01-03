@@ -39,4 +39,4 @@ pip install pyusb json5
 
 ## Credits
 - [@chaosmaster](https://github.com/chaosmaster)
-- [@xyzz](https:
+- [@xyzz](https://github.com/xyzz)
