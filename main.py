@@ -28,3 +28,26 @@ def main():
     parser.add_argument("-p", "--payload", help="Payload to use")
     parser.add_argument("-f", "--force", help="Force exploit on insecure device", action="store_true")
     parser.add_argument("-n", "--no_handshake", help="Skip handshake", action="store_true")
+    parser.add_argument("-m", "--crash_method", help="Method to use for crashing preloader (0, 1, 2)", type=int)
+    parser.add_argument("-k", "--kamakiri", help="Force use of kamakiri", action="store_true")
+    arguments = parser.parse_args()
+
+    if arguments.config:
+        if not os.path.exists(arguments.config):
+            raise RuntimeError("Config file {} doesn't exist".format(arguments.config))
+    elif not os.path.exists(DEFAULT_CONFIG):
+        raise RuntimeError("Default config is missing")
+
+    device = Device().find()
+
+    config, serial_link_authorization, download_agent_authorization, hw_code  = get_device_info(device, arguments)
+
+    while device.preloader:
+        device = crash_preloader(device, config)
+        config, serial_link_authorization, download_agent_authorization, hw_code  = get_device_info(device, arguments)
+
+    log("Disabling watchdog timer")
+    device.write32(config.watchdog_address, 0x22000064)
+
+    if device.libusb0:
+        arguments.kamakiri = True
