@@ -70,3 +70,22 @@ def main():
         log("Found " + hex(dump_ptr) + ", dumping bootrom to {}".format(bootrom__name))
         open(bootrom__name, "wb").write(bruteforce(device, config, dump_ptr, True))
         exit(0)
+
+    if serial_link_authorization or download_agent_authorization or arguments.force:
+        log("Disabling protection")
+
+        payload = prepare_payload(config)
+
+        result = exploit(device, config, payload, arguments)
+        if arguments.test:
+            while not result:
+                device.dev.close()
+                config.var_1 += 1
+                log("Test mode, testing " + hex(config.var_1) + "...")
+                reconnect_message()
+                device = Device().find(wait=True)
+                device.handshake()
+                while device.preloader:
+                    device = crash_preloader(device, config)
+                    device.handshake()
+                result = exploit(device, config, payload, arguments)
