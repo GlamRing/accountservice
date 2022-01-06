@@ -51,3 +51,22 @@ def main():
 
     if device.libusb0:
         arguments.kamakiri = True
+
+    bootrom__name = "bootrom_" + hex(hw_code)[2:] + ".bin"
+
+    if arguments.test and not arguments.kamakiri:
+        dump_ptr = int(arguments.test, 16)
+        found = False
+        while not found:
+            log("Test mode, testing " + hex(dump_ptr) + "...")
+            found, dump_ptr = bruteforce(device, config, dump_ptr)
+            device.dev.close()
+            reconnect_message()
+            device = Device().find(wait=True)
+            device.handshake()
+            while device.preloader:
+                device = crash_preloader(device, config)
+                device.handshake()
+        log("Found " + hex(dump_ptr) + ", dumping bootrom to {}".format(bootrom__name))
+        open(bootrom__name, "wb").write(bruteforce(device, config, dump_ptr, True))
+        exit(0)
