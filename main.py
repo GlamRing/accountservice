@@ -89,3 +89,30 @@ def main():
                     device = crash_preloader(device, config)
                     device.handshake()
                 result = exploit(device, config, payload, arguments)
+    else:
+        log("Insecure device, sending payload using send_da")
+
+        if not arguments.payload:
+            config.payload = DEFAULT_PAYLOAD
+        if not arguments.payload_address:
+            config.payload_address = DEFAULT_DA_ADDRESS
+
+        payload = prepare_payload(config)
+
+        payload += b'\x00' * 0x100
+
+        device.send_da(config.payload_address, len(payload), 0x100, payload)
+        device.jump_da(config.payload_address)
+
+        result = device.read(4)
+
+    if result == to_bytes(0xA1A2A3A4, 4):
+        log("Protection disabled")
+    elif result == to_bytes(0xC1C2C3C4, 4):
+        dump_brom(device, bootrom__name)
+    elif result == to_bytes(0x0000C1C2, 4) and device.read(4) == to_bytes(0xC1C2C3C4, 4):
+        dump_brom(device, bootrom__name, True)
+    elif result != b'':
+        raise RuntimeError("Unexpected result {}".format(result.hex()))
+    else:
+        log("Payload did not reply")
