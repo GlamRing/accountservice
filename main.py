@@ -116,3 +116,37 @@ def main():
         raise RuntimeError("Unexpected result {}".format(result.hex()))
     else:
         log("Payload did not reply")
+
+    device.close()
+
+def reconnect_message():
+    print("")
+    print("Please reconnect device in bootrom mode")
+    print("")
+
+def dump_brom(device, bootrom__name, word_mode=False):
+    log("Found send_dword, dumping bootrom to {}".format(bootrom__name))
+
+    with open(bootrom__name, "wb") as bootrom:
+        if word_mode:
+            for i in range(0x20000 // 4):
+                device.read(4)  # discard garbage
+                bootrom.write(device.read(4))
+        else:
+            bootrom.write(device.read(0x20000))
+
+
+def prepare_payload(config):
+    with open(PAYLOAD_DIR + config.payload, "rb") as payload:
+        payload = payload.read()
+
+    # replace watchdog_address and uart_base in generic payload
+    payload = bytearray(payload)
+    if from_bytes(payload[-4:], 4, '<') == 0x10007000:
+        payload[-4:] = to_bytes(config.watchdog_address, 4, '<')
+    if from_bytes(payload[-8:][:4], 4, '<') == 0x11002000:
+        payload[-8:] = to_bytes(config.uart_base, 4, '<') + payload[-4:]
+    payload = bytes(payload)
+
+    while len(payload) % 4 != 0:
+        payload += to_bytes(0)
