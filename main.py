@@ -150,3 +150,32 @@ def prepare_payload(config):
 
     while len(payload) % 4 != 0:
         payload += to_bytes(0)
+
+    return payload
+
+
+def get_device_info(device, arguments):
+    if not arguments.no_handshake:
+        device.handshake()
+
+    hw_code = device.get_hw_code()
+    hw_sub_code, hw_ver, sw_ver = device.get_hw_dict()
+    secure_boot, serial_link_authorization, download_agent_authorization = device.get_target_config()
+
+    if arguments.config:
+        config_file = open(arguments.config)
+        config = Config().from_file(config_file, hw_code)
+        config_file.close()
+    else:
+        try:
+            config = Config().default(hw_code)
+        except NotImplementedError as e:
+            if arguments.test:
+                config = Config()
+
+                log(e)
+            else:
+                raise e
+
+    if arguments.test:
+        config.payload = DEFAULT_PAYLOAD
