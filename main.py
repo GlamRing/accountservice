@@ -179,3 +179,29 @@ def get_device_info(device, arguments):
 
     if arguments.test:
         config.payload = DEFAULT_PAYLOAD
+    if arguments.var_1:
+        config.var_1 = int(arguments.var_1, 16)
+    if arguments.watchdog:
+        config.watchdog_address = int(arguments.watchdog, 16)
+    if arguments.uart:
+        config.uart_base = int(arguments.uart, 16)
+    if arguments.payload_address:
+        config.payload_address = int(arguments.payload_address, 16)
+    if arguments.payload:
+        config.payload = arguments.payload
+    if arguments.crash_method:
+        config.crash_method = arguments.crash_method
+
+
+    if not os.path.exists(PAYLOAD_DIR + config.payload):
+        raise RuntimeError("Payload file {} doesn't exist".format(PAYLOAD_DIR + config.payload))
+
+    print()
+    log("Device hw code: {}".format(hex(hw_code)))
+    log("Device hw sub code: {}".format(hex(hw_sub_code)))
+    log("Device hw version: {}".format(hex(hw_ver)))
+    log("Device sw version: {}".format(hex(sw_ver)))
+    log("Device secure boot: {}".format(secure_boot))
+    log("Device serial link authorization: {}".format(serial_link_authorization))
+    log("Device download agent authorization: {}".format(download_agent_authorization))
+    print()
