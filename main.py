@@ -230,3 +230,9 @@ def crash_preloader(device, config):
     device.dev.close()
 
     device = Device().find()
+
+    return device
+
+
+if __name__ == "__main__":
+    main()
