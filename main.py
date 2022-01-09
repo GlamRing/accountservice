@@ -205,3 +205,28 @@ def get_device_info(device, arguments):
     log("Device serial link authorization: {}".format(serial_link_authorization))
     log("Device download agent authorization: {}".format(download_agent_authorization))
     print()
+
+    return config, serial_link_authorization, download_agent_authorization, hw_code
+
+def crash_preloader(device, config):
+    print("")
+    log("Found device in preloader mode, trying to crash...")
+    print("")
+    if config.crash_method == 0:
+        try:
+            payload = b'\x00\x01\x9F\xE5\x10\xFF\x2F\xE1' + b'\x00' * 0x110
+            device.send_da(0, len(payload), 0, payload)
+            device.jump_da(0)
+        except RuntimeError as e:
+            log(e)
+            print("")
+    elif config.crash_method == 1:
+        payload = b'\x00' * 0x100
+        device.send_da(0, len(payload), 0x100, payload)
+        device.jump_da(0)
+    elif config.crash_method == 2:
+        device.read32(0)
+
+    device.dev.close()
+
+    device = Device().find()
