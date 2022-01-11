@@ -4,4 +4,4 @@ import usb
 import array
 import struct
 
-de
+def bruteforce(device, con
