@@ -4,4 +4,6 @@ import usb
 import array
 import struct
 
-def bruteforce(device, config, dump_ptr, dump=F
+def bruteforce(device, config, dump_ptr, dump=False):
+
+    addr = co
