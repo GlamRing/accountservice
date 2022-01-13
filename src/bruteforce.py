@@ -6,4 +6,4 @@ import struct
 
 def bruteforce(device, config, dump_ptr, dump=False):
 
-    addr = co
+    addr = config.watchdog_address + 0x50
