@@ -7,3 +7,5 @@ import struct
 def bruteforce(device, config, dump_ptr, dump=False):
 
     addr = config.watchdog_address + 0x50
+
+    # We don't need 
