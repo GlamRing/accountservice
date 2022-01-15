@@ -9,3 +9,4 @@ def bruteforce(device, config, dump_ptr, dump=False):
     addr = config.watchdog_address + 0x50
 
     # We don't need to wait long, if we succeeded
+    # noinspection PyB
