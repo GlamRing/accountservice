@@ -11,4 +11,5 @@ def bruteforce(device, config, dump_ptr, dump=False):
     # We don't need to wait long, if we succeeded
     # noinspection PyBroadException
     try:
-        device.d
+        device.dev.timeout = 1
+    except Exception:
