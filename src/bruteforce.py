@@ -13,3 +13,6 @@ def bruteforce(device, config, dump_ptr, dump=False):
     try:
         device.dev.timeout = 1
     except Exception:
+        pass
+
+   
