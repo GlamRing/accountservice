@@ -15,4 +15,6 @@ def bruteforce(device, config, dump_ptr, dump=False):
     except Exception:
         pass
 
-   
+    udev = device.udev
+
+    
