@@ -18,4 +18,4 @@ def bruteforce(device, config, dump_ptr, dump=False):
     udev = device.udev
 
     try:
-        # noinspection
+        # noinspection PyProtectedMember
