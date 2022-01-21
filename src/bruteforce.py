@@ -19,3 +19,4 @@ def bruteforce(device, config, dump_ptr, dump=False):
 
     try:
         # noinspection PyProtectedMember
+        udev._ctx.managed
