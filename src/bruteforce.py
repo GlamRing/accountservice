@@ -19,4 +19,5 @@ def bruteforce(device, config, dump_ptr, dump=False):
 
     try:
         # noinspection PyProtectedMember
-        udev._ctx.managed_claim_interface = lambda *args, **kwar
+        udev._ctx.managed_claim_interface = lambda *args, **kwargs: None
+    except AttributeError 
