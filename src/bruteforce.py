@@ -21,4 +21,6 @@ def bruteforce(device, config, dump_ptr, dump=False):
         # noinspection PyProtectedMember
         udev._ctx.managed_claim_interface = lambda *args, **kwargs: None
     except AttributeError as e:
-        raise RuntimeError("libusb is not installed for port {}".format(device.dev.port)) f
+        raise RuntimeError("libusb is not installed for port {}".format(device.dev.port)) from e
+
+    linecode 
