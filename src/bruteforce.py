@@ -23,4 +23,6 @@ def bruteforce(device, config, dump_ptr, dump=False):
     except AttributeError as e:
         raise RuntimeError("libusb is not installed for port {}".format(device.dev.port)) from e
 
-    linecode = udev.ctrl_transfer(0xA1, 0x21, 0, 0, 7) + array.array
+    linecode = udev.ctrl_transfer(0xA1, 0x21, 0, 0, 7) + array.array('B', [0])
+
+  
