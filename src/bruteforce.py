@@ -25,4 +25,5 @@ def bruteforce(device, config, dump_ptr, dump=False):
 
     linecode = udev.ctrl_transfer(0xA1, 0x21, 0, 0, 7) + array.array('B', [0])
 
-  
+    if dump:
+   
