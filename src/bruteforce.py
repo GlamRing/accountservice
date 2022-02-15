@@ -27,4 +27,5 @@ def bruteforce(device, config, dump_ptr, dump=False):
 
     if dump:
         try:
-            d
+            device.cmd_da(0, 0, 1)
+       
