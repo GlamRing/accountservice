@@ -30,4 +30,6 @@ def bruteforce(device, config, dump_ptr, dump=False):
             device.cmd_da(0, 0, 1)
             device.read32(addr)
         except:
-    
+            pass
+
+      
