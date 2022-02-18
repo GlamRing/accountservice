@@ -33,4 +33,4 @@ def bruteforce(device, config, dump_ptr, dump=False):
             pass
 
         for i in range(4):
-     
+            udev.ctrl
