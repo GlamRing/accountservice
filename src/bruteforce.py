@@ -32,4 +32,5 @@ def bruteforce(device, config, dump_ptr, dump=False):
         except:
             pass
 
-      
+        for i in range(4):
+     
