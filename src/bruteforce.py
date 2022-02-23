@@ -34,4 +34,4 @@ def bruteforce(device, config, dump_ptr, dump=False):
 
         for i in range(4):
             udev.ctrl_transfer(0x21, 0x20, 0, 0, linecode + array.array('B', to_bytes(dump_ptr - 6 + (4 - i), 4, '<')))
-            ud
+            udev.ctrl_transfer(0x80, 0x6, 0x0
