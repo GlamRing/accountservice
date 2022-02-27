@@ -37,4 +37,4 @@ def bruteforce(device, config, dump_ptr, dump=False):
             udev.ctrl_transfer(0x80, 0x6, 0x0200, 0, 9)
 
         brom = bytearray(device.cmd_da(0, 0, 0x20000))
-        brom[dump_ptr
+        brom[dump_ptr - 1:] = b"\x00" + to_
