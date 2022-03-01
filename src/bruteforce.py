@@ -38,4 +38,6 @@ def bruteforce(device, config, dump_ptr, dump=False):
 
         brom = bytearray(device.cmd_da(0, 0, 0x20000))
         brom[dump_ptr - 1:] = b"\x00" + to_bytes(0x100030, 4, '<') + brom[dump_ptr + 4:]
-        r
+        return brom
+
+  
