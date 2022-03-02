@@ -40,4 +40,6 @@ def bruteforce(device, config, dump_ptr, dump=False):
         brom[dump_ptr - 1:] = b"\x00" + to_bytes(0x100030, 4, '<') + brom[dump_ptr + 4:]
         return brom
 
-  
+    else:
+        try:
+      
