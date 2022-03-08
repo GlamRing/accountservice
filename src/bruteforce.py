@@ -47,4 +47,5 @@ def bruteforce(device, config, dump_ptr, dump=False):
         except:
             pass
 
-        for address in range(dump_pt
+        for address in range(dump_ptr, 0xffff, 4):
+    
