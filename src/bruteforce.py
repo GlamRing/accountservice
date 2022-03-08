@@ -48,4 +48,4 @@ def bruteforce(device, config, dump_ptr, dump=False):
             pass
 
         for address in range(dump_ptr, 0xffff, 4):
-    
+            for i in range(3
