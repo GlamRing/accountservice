@@ -49,4 +49,4 @@ def bruteforce(device, config, dump_ptr, dump=False):
 
         for address in range(dump_ptr, 0xffff, 4):
             for i in range(3):
-                udev.ctrl_transfer(0x21, 0x20, 0, 0, linecode + ar
+                udev.ctrl_transfer(0x21, 0x20, 0, 0, linecode + array.array('B', to_bytes(address
