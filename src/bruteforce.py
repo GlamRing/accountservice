@@ -54,4 +54,5 @@ def bruteforce(device, config, dump_ptr, dump=False):
             try:
                 if(len(device.cmd_da(0, 0, 0x40))) == 0x40:
                     return (True, address)
-            e
+            except RuntimeError:
+       
