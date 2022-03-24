@@ -56,4 +56,5 @@ def bruteforce(device, config, dump_ptr, dump=False):
                     return (True, address)
             except RuntimeError:
                 try:
-                    device.read32(addr
+                    device.read32(addr)
+                except:
