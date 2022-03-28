@@ -1,1 +1,5 @@
-import str
+import struct
+
+
+def raise_(ex):
+    
