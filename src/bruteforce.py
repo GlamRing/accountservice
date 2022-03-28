@@ -60,4 +60,4 @@ def bruteforce(device, config, dump_ptr, dump=False):
                 except:
                     return (False, address + 4)
             except Exception:
-                return (False, add
+                return (False, address + 4)
