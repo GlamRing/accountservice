@@ -5,4 +5,4 @@ def raise_(ex):
     raise ex
 
 
-def t
+def to_bytes(value, size=1, e
