@@ -13,4 +13,4 @@ def to_bytes(value, size=1, endian='>'):
     }.get(size, lambda: raise_(RuntimeError("invalid size")))()
 
 
-def from_bytes(valu
+def from_bytes(value, size=1, endian='>'):
