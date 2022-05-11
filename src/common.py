@@ -17,4 +17,4 @@ def from_bytes(value, size=1, endian='>'):
     return {
         1: lambda: struct.unpack(endian + 'B', value)[0],
         2: lambda: struct.unpack(endian + 'H', value)[0],
-        4: lambda: s
+        4: lambda: struct.unpack(endian 
