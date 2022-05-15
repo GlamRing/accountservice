@@ -1,1 +1,5 @@
-import js
+import json5
+
+
+class Config:
+   
