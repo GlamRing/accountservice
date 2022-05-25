@@ -8,4 +8,5 @@ class Config:
     var_0: int = None
     var_1: int = 0xA
     payload: str
-    crash_method: 
+    crash_method: int = 0
+    ptr_usbdl: int
