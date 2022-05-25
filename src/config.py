@@ -10,4 +10,6 @@ class Config:
     payload: str
     crash_method: int = 0
     ptr_usbdl: int = None
-    ptr_da: int =
+    ptr_da: int = None
+
+    def default(s
