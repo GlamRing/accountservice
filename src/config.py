@@ -7,4 +7,5 @@ class Config:
     payload_address: int = 0x100A00
     var_0: int = None
     var_1: int = 0xA
-  
+    payload: str
+    crash_method: 
