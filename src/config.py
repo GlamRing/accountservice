@@ -12,4 +12,5 @@ class Config:
     ptr_usbdl: int = None
     ptr_da: int = None
 
-    def default(s
+    def default(self, hw_code):
+        c
