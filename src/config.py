@@ -19,4 +19,5 @@ class Config:
 
         return self
 
-    def from_file(self,
+    def from_file(self, config, hw_code):
+        hw_c
