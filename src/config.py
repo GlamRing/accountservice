@@ -14,4 +14,4 @@ class Config:
 
     def default(self, hw_code):
         config = open("default_config.json5")
-   
+        self.from_file(con
