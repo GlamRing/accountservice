@@ -13,4 +13,5 @@ class Config:
     ptr_da: int = None
 
     def default(self, hw_code):
-        config = open("default_c
+        config = open("default_config.json5")
+   
