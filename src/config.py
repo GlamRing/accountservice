@@ -17,4 +17,6 @@ class Config:
         self.from_file(config, hw_code)
         config.close()
 
-        return
+        return self
+
+    def from_file(self,
