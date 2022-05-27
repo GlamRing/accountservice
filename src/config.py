@@ -13,4 +13,4 @@ class Config:
     ptr_da: int = None
 
     def default(self, hw_code):
-        c
+        config = open("default_c
