@@ -22,4 +22,4 @@ class Config:
     def from_file(self, config, hw_code):
         hw_code = hex(hw_code)
 
-  
+        config = jso
