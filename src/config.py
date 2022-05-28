@@ -20,4 +20,6 @@ class Config:
         return self
 
     def from_file(self, config, hw_code):
-        hw_c
+        hw_code = hex(hw_code)
+
+  
