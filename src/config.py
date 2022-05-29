@@ -24,4 +24,5 @@ class Config:
 
         config = json5.load(config)
 
-      
+        if hw_code in config:
+  
