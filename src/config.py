@@ -27,3 +27,4 @@ class Config:
         if hw_code in config:
             self.from_dict(config[hw_code])
         else:
+            raise NotImplement
