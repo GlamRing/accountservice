@@ -25,4 +25,5 @@ class Config:
         config = json5.load(config)
 
         if hw_code in config:
-            self.from_dict(
+            self.from_dict(config[hw_code])
+        else:
