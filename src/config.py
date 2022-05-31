@@ -29,4 +29,6 @@ class Config:
         else:
             raise NotImplementedError("Can't find {} hw_code in config".format(hw_code))
 
-   
+        return self
+
+    def from_dict
