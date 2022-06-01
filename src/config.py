@@ -31,4 +31,5 @@ class Config:
 
         return self
 
-    def from_dict
+    def from_dict(self, entry):
+       
