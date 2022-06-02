@@ -32,4 +32,4 @@ class Config:
         return self
 
     def from_dict(self, entry):
-       
+        if "watchdog_address
