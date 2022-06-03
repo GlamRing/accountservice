@@ -33,4 +33,6 @@ class Config:
 
     def from_dict(self, entry):
         if "watchdog_address" in entry:
-            self.watchdog_address = entry["watchdog_addres
+            self.watchdog_address = entry["watchdog_address"]
+
+        if "uart_
