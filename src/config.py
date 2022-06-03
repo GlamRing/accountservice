@@ -33,4 +33,4 @@ class Config:
 
     def from_dict(self, entry):
         if "watchdog_address" in entry:
-            s
+            self.watchdog_addres
