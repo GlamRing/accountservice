@@ -36,4 +36,4 @@ class Config:
             self.watchdog_address = entry["watchdog_address"]
 
         if "uart_base" in entry:
-        
+            self.uart_base =
