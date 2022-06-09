@@ -38,4 +38,5 @@ class Config:
         if "uart_base" in entry:
             self.uart_base = entry["uart_base"]
 
-        if "payload_addre
+        if "payload_address" in entry:
+       
