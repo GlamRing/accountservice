@@ -39,4 +39,6 @@ class Config:
             self.uart_base = entry["uart_base"]
 
         if "payload_address" in entry:
-            self.payload_address = entry["payload_a
+            self.payload_address = entry["payload_address"]
+
+        if "var_0" in e
