@@ -41,4 +41,5 @@ class Config:
         if "payload_address" in entry:
             self.payload_address = entry["payload_address"]
 
-        if "var_0" in e
+        if "var_0" in entry:
+            self.var_0 =
