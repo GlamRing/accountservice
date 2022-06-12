@@ -42,4 +42,6 @@ class Config:
             self.payload_address = entry["payload_address"]
 
         if "var_0" in entry:
-            self.var_0 =
+            self.var_0 = entry["var_0"]
+
+  
