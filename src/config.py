@@ -45,4 +45,4 @@ class Config:
             self.var_0 = entry["var_0"]
 
         if "var_1" in entry:
-   
+            self.var_1 
