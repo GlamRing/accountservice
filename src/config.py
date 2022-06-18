@@ -48,4 +48,4 @@ class Config:
             self.var_1 = entry["var_1"]
 
         if "crash_method" in entry:
-     
+            self.crash_met
