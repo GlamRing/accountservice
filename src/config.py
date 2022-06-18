@@ -46,3 +46,5 @@ class Config:
 
         if "var_1" in entry:
             self.var_1 = entry["var_1"]
+
+        if "crash_meth
