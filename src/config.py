@@ -53,4 +53,5 @@ class Config:
         if "ptr_usbdl" in entry:
             self.ptr_usbdl = entry["ptr_usbdl"]
 
-        if "ptr_da" in entr
+        if "ptr_da" in entry:
+            self.pt
