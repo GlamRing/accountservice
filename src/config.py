@@ -54,4 +54,4 @@ class Config:
             self.ptr_usbdl = entry["ptr_usbdl"]
 
         if "ptr_da" in entry:
-            self.pt
+            self.ptr_da = entry["pt
