@@ -51,4 +51,4 @@ class Config:
             self.crash_method = entry["crash_method"]
 
         if "ptr_usbdl" in entry:
-         
+            self.ptr_usbdl = ent
