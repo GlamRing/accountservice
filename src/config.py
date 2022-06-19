@@ -56,4 +56,4 @@ class Config:
         if "ptr_da" in entry:
             self.ptr_da = entry["ptr_da"]
 
-        self.payload
+        self.payload = entry["payload"]
