@@ -58,4 +58,4 @@ class Config:
 
         self.payload = entry["payload"]
 
-        return sel
+        return self
