@@ -1,1 +1,1 @@
-from src.comm
+from src.common import to_bytes
