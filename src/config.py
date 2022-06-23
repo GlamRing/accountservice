@@ -57,3 +57,5 @@ class Config:
             self.ptr_da = entry["ptr_da"]
 
         self.payload = entry["payload"]
+
+        return sel
