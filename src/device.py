@@ -3,4 +3,4 @@ from src.logger import log
 import usb
 import usb.backend.libusb1
 import usb.backend.libusb0
-from ctypes imp
+from ctypes import c_void_p, c_
