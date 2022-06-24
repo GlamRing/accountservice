@@ -3,4 +3,6 @@ from src.logger import log
 import usb
 import usb.backend.libusb1
 import usb.backend.libusb0
-from ctypes import c_void_p, c_
+from ctypes import c_void_p, c_int
+import array
+import o
