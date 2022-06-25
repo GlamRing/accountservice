@@ -9,4 +9,6 @@ import os
 
 import time
 
-BAUD = 1
+BAUD = 115200
+TIMEOUT = 1
+VID
