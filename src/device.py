@@ -11,4 +11,6 @@ import time
 
 BAUD = 115200
 TIMEOUT = 1
-VID
+VID = "0E8D"
+PID = "0003"
+
