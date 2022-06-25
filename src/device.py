@@ -16,4 +16,5 @@ PID = "0003"
 
 
 class Device:
-    def __init__(self, port=No
+    def __init__(self, port=None):
+        self.udev = 
