@@ -14,3 +14,6 @@ TIMEOUT = 1
 VID = "0E8D"
 PID = "0003"
 
+
+class Device:
+    def
