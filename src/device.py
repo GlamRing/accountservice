@@ -16,4 +16,4 @@ PID = "0003"
 
 
 class Device:
-    def
+    def __init__(self, port=No
