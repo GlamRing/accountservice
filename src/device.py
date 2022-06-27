@@ -19,4 +19,4 @@ class Device:
     def __init__(self, port=None):
         self.udev = None
         self.dev = None
-        self.r
+        self.rxbuffer = array.array('B')
