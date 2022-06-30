@@ -20,4 +20,5 @@ class Device:
         self.udev = None
         self.dev = None
         self.rxbuffer = array.array('B')
-        self.preloader = Fa
+        self.preloader = False
+        self.timeout = 
