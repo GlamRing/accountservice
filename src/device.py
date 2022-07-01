@@ -23,4 +23,6 @@ class Device:
         self.preloader = False
         self.timeout = TIMEOUT
         self.usbdk = False
-        sel
+        self.libusb0 = False
+
+        if os
