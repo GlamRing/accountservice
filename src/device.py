@@ -22,4 +22,5 @@ class Device:
         self.rxbuffer = array.array('B')
         self.preloader = False
         self.timeout = TIMEOUT
-        se
+        self.usbdk = False
+        sel
