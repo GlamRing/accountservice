@@ -21,4 +21,5 @@ class Device:
         self.dev = None
         self.rxbuffer = array.array('B')
         self.preloader = False
-        self.timeout = 
+        self.timeout = TIMEOUT
+        se
