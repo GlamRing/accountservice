@@ -25,4 +25,6 @@ class Device:
         self.usbdk = False
         self.libusb0 = False
 
-        if os
+        if os.name == 'nt':
+            try:
+  
