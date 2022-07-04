@@ -27,4 +27,4 @@ class Device:
 
         if os.name == 'nt':
             try:
-                file
+                file_dir = os.path
