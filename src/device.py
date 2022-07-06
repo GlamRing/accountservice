@@ -32,4 +32,4 @@ class Device:
                     os.add_dll_directory(file_dir)
                 except Exception:
                     pass
-  
+                os.envir
