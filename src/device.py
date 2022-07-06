@@ -27,4 +27,5 @@ class Device:
 
         if os.name == 'nt':
             try:
-                file_dir = os.path.join(os.path.abspath(os.path.dirname(__f
+                file_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), "..")
+          
