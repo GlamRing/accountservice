@@ -31,4 +31,5 @@ class Device:
                 try:
                     os.add_dll_directory(file_dir)
                 except Exception:
-     
+                    pass
+  
