@@ -29,4 +29,4 @@ class Device:
             try:
                 file_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), "..")
                 try:
-              
+                    os.add_dll_directory(
