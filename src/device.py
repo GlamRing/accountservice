@@ -36,4 +36,5 @@ class Device:
             except Exception:
                 pass
 
-    def find(self, wait=Fal
+    def find(self, wait=False):
+        if self.dev
