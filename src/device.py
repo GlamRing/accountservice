@@ -41,4 +41,4 @@ class Device:
             raise RuntimeError("Device already found")
 
         try:
-         
+            self.backend = usb.backe
