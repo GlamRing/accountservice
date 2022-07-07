@@ -36,4 +36,4 @@ class Device:
             except Exception:
                 pass
 
-    def fin
+    def find(self, wait=Fal
