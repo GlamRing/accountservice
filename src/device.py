@@ -38,4 +38,4 @@ class Device:
 
     def find(self, wait=False):
         if self.dev:
-            raise RuntimeError("D
+            raise RuntimeError("Device already fou
