@@ -37,4 +37,5 @@ class Device:
                 pass
 
     def find(self, wait=False):
-        if self.dev
+        if self.dev:
+            raise RuntimeError("D
