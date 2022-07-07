@@ -34,4 +34,6 @@ class Device:
                     pass
                 os.environ['PATH'] = file_dir + ';' + os.environ['PATH']
             except Exception:
-        
+                pass
+
+    def fin
