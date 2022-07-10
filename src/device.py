@@ -41,4 +41,4 @@ class Device:
             raise RuntimeError("Device already found")
 
         try:
-            self.backend = usb.backend.libusb1.get_backend(find_library=lambda
+            self.backend = usb.backend.libusb1.get_backend(find_library=lambda x: "libusb-1.0.dll")
