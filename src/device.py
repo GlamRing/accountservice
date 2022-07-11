@@ -44,4 +44,5 @@ class Device:
             self.backend = usb.backend.libusb1.get_backend(find_library=lambda x: "libusb-1.0.dll")
             if self.backend:
                 try:
-                    self.backend.lib.libusb_set_option.argtypes = [c_voi
+                    self.backend.lib.libusb_set_option.argtypes = [c_void_p, c_int]
+        
