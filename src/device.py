@@ -45,4 +45,4 @@ class Device:
             if self.backend:
                 try:
                     self.backend.lib.libusb_set_option.argtypes = [c_void_p, c_int]
-                    self.backend.lib.libusb_set_option(self.backend.
+                    self.backend.lib.libusb_set_option(self.backend.ctx, 1)  # <--- thi
