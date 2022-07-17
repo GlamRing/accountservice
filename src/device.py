@@ -46,4 +46,4 @@ class Device:
                 try:
                     self.backend.lib.libusb_set_option.argtypes = [c_void_p, c_int]
                     self.backend.lib.libusb_set_option(self.backend.ctx, 1)  # <--- this is the magic call to enable usbdk mode
-                 
+                    self.usbdk = True
