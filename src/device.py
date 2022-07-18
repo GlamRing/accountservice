@@ -48,4 +48,4 @@ class Device:
                     self.backend.lib.libusb_set_option(self.backend.ctx, 1)  # <--- this is the magic call to enable usbdk mode
                     self.usbdk = True
                 except ValueError:
-                    log("F
+                    log("Failed enabling UsbDk mode, plea
