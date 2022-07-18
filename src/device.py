@@ -49,4 +49,5 @@ class Device:
                     self.usbdk = True
                 except ValueError:
                     log("Failed enabling UsbDk mode, please use 64-Bit Python and 64-Bit UsbDk")
-    
+            else:
+      
