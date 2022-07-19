@@ -50,4 +50,4 @@ class Device:
                 except ValueError:
                     log("Failed enabling UsbDk mode, please use 64-Bit Python and 64-Bit UsbDk")
             else:
-      
+                self.backend
