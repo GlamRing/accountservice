@@ -51,4 +51,5 @@ class Device:
                     log("Failed enabling UsbDk mode, please use 64-Bit Python and 64-Bit UsbDk")
             else:
                 self.backend = usb.backend.libusb1.get_backend()
-        except usb.core.USBE
+        except usb.core.USBError:
+            self.
