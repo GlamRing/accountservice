@@ -52,4 +52,6 @@ class Device:
             else:
                 self.backend = usb.backend.libusb1.get_backend()
         except usb.core.USBError:
-            self.backend = usb.backend.libusb1.g
+            self.backend = usb.backend.libusb1.get_backend()
+
+     
