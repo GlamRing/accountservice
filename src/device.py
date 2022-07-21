@@ -56,4 +56,4 @@ class Device:
 
         log("Waiting for device")
         if wait:
-            sel
+            self.udev = usb.core.find(id
