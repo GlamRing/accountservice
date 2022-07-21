@@ -54,4 +54,4 @@ class Device:
         except usb.core.USBError:
             self.backend = usb.backend.libusb1.get_backend()
 
-     
+        log("Waiting for device")
