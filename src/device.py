@@ -55,3 +55,5 @@ class Device:
             self.backend = usb.backend.libusb1.get_backend()
 
         log("Waiting for device")
+        if wait:
+            sel
