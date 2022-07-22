@@ -56,4 +56,5 @@ class Device:
 
         log("Waiting for device")
         if wait:
-            self.udev = usb.core.find(idVendor=int(VID, 16), backend=
+            self.udev = usb.core.find(idVendor=int(VID, 16), backend=self.backend)
+            w
