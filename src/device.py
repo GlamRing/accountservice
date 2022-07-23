@@ -59,4 +59,4 @@ class Device:
             self.udev = usb.core.find(idVendor=int(VID, 16), backend=self.backend)
             while self.udev:
                 time.sleep(0.25)
-                self.udev = usb.core.find(idVendor=int(VI
+                self.udev = usb.core.find(idVendor=int(VID, 16), backend=self.backe
