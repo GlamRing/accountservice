@@ -66,3 +66,5 @@ class Device:
             if self.udev:
                 break
             time.sleep(0.25)
+
+        log("
