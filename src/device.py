@@ -63,4 +63,5 @@ class Device:
         self.udev = None
         while not self.udev:
             self.udev = usb.core.find(idVendor=int(VID, 16), backend=self.backend)
-            i
+            if self.udev:
+ 
