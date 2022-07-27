@@ -67,4 +67,4 @@ class Device:
                 break
             time.sleep(0.25)
 
-        log("
+        log("Found device = {0:04
