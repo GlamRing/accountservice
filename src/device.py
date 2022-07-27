@@ -67,4 +67,4 @@ class Device:
                 break
             time.sleep(0.25)
 
-        log("Found device = {0:04
+        log("Found device = {0:04x}:{1:04x}".format(s
