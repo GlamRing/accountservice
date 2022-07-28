@@ -71,4 +71,4 @@ class Device:
         self.dev = self
 
         try:
-            if se
+            if self.udev.is_kernel_drive
