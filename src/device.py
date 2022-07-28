@@ -71,4 +71,5 @@ class Device:
         self.dev = self
 
         try:
-            if self.udev.is_kernel_drive
+            if self.udev.is_kernel_driver_active(0):
+          
