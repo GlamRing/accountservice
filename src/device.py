@@ -70,4 +70,5 @@ class Device:
         log("Found device = {0:04x}:{1:04x}".format(self.udev.idVendor, self.udev.idProduct))
         self.dev = self
 
-        try
+        try:
+            if se
