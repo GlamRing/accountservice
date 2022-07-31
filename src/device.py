@@ -75,4 +75,6 @@ class Device:
                 self.udev.detach_kernel_driver(0)
 
             if self.udev.is_kernel_driver_active(1):
-                self.udev.detac
+                self.udev.detach_kernel_driver(1)
+
+        
