@@ -78,4 +78,6 @@ class Device:
                 self.udev.detach_kernel_driver(1)
 
         except (NotImplementedError, usb.core.USBError):
-         
+            pass
+
+        try:
