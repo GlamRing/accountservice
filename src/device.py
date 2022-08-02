@@ -77,4 +77,5 @@ class Device:
             if self.udev.is_kernel_driver_active(1):
                 self.udev.detach_kernel_driver(1)
 
-        except (NotImplementedErro
+        except (NotImplementedError, usb.core.USBError):
+         
