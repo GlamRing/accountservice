@@ -81,4 +81,4 @@ class Device:
             pass
 
         try:
-           
+            self.configura
