@@ -81,4 +81,5 @@ class Device:
             pass
 
         try:
-            self.configuration = self.udev.get_active_co
+            self.configuration = self.udev.get_active_configuration()
+    
