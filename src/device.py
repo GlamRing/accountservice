@@ -82,4 +82,5 @@ class Device:
 
         try:
             self.configuration = self.udev.get_active_configuration()
-        except (usb.core.USBError, NotImplementedError) as
+        except (usb.core.USBError, NotImplementedError) as e:
+            if t
