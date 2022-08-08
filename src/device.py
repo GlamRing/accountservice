@@ -84,4 +84,5 @@ class Device:
             self.configuration = self.udev.get_active_configuration()
         except (usb.core.USBError, NotImplementedError) as e:
             if type(e) is usb.core.USBError and e.errno == 13 or type(e) is NotImplementedError:
-                log("Failed to enable libusb1, is UsbDk inst
+                log("Failed to enable libusb1, is UsbDk installed?")
+          
