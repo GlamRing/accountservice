@@ -86,4 +86,4 @@ class Device:
             if type(e) is usb.core.USBError and e.errno == 13 or type(e) is NotImplementedError:
                 log("Failed to enable libusb1, is UsbDk installed?")
                 log("Falling back to libusb0 (kamakiri only)")
-             
+                self.backend = usb.backend.li
