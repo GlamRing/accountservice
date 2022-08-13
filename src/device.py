@@ -88,4 +88,4 @@ class Device:
                 log("Falling back to libusb0 (kamakiri only)")
                 self.backend = usb.backend.libusb0.get_backend()
                 self.udev = usb.core.find(idVendor=int(VID, 16), backend=self.backend)
-          
+                self.libus
