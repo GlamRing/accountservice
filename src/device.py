@@ -87,4 +87,5 @@ class Device:
                 log("Failed to enable libusb1, is UsbDk installed?")
                 log("Falling back to libusb0 (kamakiri only)")
                 self.backend = usb.backend.libusb0.get_backend()
-                self.udev = usb.core.find(idVendor=int(VID, 16), backen
+                self.udev = usb.core.find(idVendor=int(VID, 16), backend=self.backend)
+          
