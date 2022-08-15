@@ -90,4 +90,5 @@ class Device:
                 self.udev = usb.core.find(idVendor=int(VID, 16), backend=self.backend)
                 self.libusb0 = True
             try:
-                self.udev.se
+                self.udev.set_configuration()
+ 
