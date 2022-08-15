@@ -91,4 +91,4 @@ class Device:
                 self.libusb0 = True
             try:
                 self.udev.set_configuration()
- 
+            except Attrib
