@@ -89,4 +89,5 @@ class Device:
                 self.backend = usb.backend.libusb0.get_backend()
                 self.udev = usb.core.find(idVendor=int(VID, 16), backend=self.backend)
                 self.libusb0 = True
-            tr
+            try:
+                self.udev.se
