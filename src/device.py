@@ -92,4 +92,4 @@ class Device:
             try:
                 self.udev.set_configuration()
             except AttributeError:
-                log(
+                log("Failed to enable libusb0")
