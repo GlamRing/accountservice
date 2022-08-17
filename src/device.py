@@ -95,4 +95,4 @@ class Device:
                 log("Failed to enable libusb0")
                 exit(1)
 
-        if self.udev.id
+        if self.udev.idProduct != int(PID
