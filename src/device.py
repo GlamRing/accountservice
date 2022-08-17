@@ -96,4 +96,5 @@ class Device:
                 exit(1)
 
         if self.udev.idProduct != int(PID, 16):
-            se
+            self.preloader = True
+        e
