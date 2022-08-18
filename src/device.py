@@ -99,4 +99,5 @@ class Device:
             self.preloader = True
         else:
             try:
-                self.udev.set_co
+                self.udev.set_configuration(1)
+  
