@@ -100,4 +100,4 @@ class Device:
         else:
             try:
                 self.udev.set_configuration(1)
-  
+                usb.util
