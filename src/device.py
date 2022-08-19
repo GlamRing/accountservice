@@ -100,4 +100,5 @@ class Device:
         else:
             try:
                 self.udev.set_configuration(1)
-                usb.util.claim_interface(self.udev,
+                usb.util.claim_interface(self.udev, 0)
+                us
