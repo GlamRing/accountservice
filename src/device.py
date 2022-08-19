@@ -102,4 +102,4 @@ class Device:
                 self.udev.set_configuration(1)
                 usb.util.claim_interface(self.udev, 0)
                 usb.util.claim_interface(self.udev, 1)
-            
+            except usb.core.USBError
