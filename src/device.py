@@ -105,4 +105,4 @@ class Device:
             except usb.core.USBError:
                 pass
 
-        cdc_if = usb.util.
+        cdc_if = usb.util.find_descriptor(s
