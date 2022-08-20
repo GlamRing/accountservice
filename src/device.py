@@ -104,3 +104,5 @@ class Device:
                 usb.util.claim_interface(self.udev, 1)
             except usb.core.USBError:
                 pass
+
+        cdc_if = usb.util.
