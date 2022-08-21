@@ -106,3 +106,4 @@ class Device:
                 pass
 
         cdc_if = usb.util.find_descriptor(self.udev.get_active_configuration(), bInterfaceClass=0xA)
+        self.ep_in = u
