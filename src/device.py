@@ -106,4 +106,4 @@ class Device:
                 pass
 
         cdc_if = usb.util.find_descriptor(self.udev.get_active_configuration(), bInterfaceClass=0xA)
-        self.ep_in = usb.util.find_descriptor(cdc_if, custom_match=lambda x: usb.util.endpoint
+        self.ep_in = usb.util.find_descriptor(cdc_if, custom_match=lambda x: usb.util.endpoint_direction(x.bEndpoi
