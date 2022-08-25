@@ -110,4 +110,4 @@ class Device:
         self.ep_out = usb.util.find_descriptor(cdc_if, custom_match=lambda x: usb.util.endpoint_direction(x.bEndpointAddress) == usb.util.ENDPOINT_OUT)
 
         try:
-            self.udev.ctrl_transfer(
+            self.udev.ctrl_transfer(0x21, 0x20, 0, 0, arra
