@@ -111,3 +111,4 @@ class Device:
 
         try:
             self.udev.ctrl_transfer(0x21, 0x20, 0, 0, array.array('B', to_bytes(BAUD, 4 , '<') + b"\x00\x00\x08"))
+        except usb
