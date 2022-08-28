@@ -114,4 +114,6 @@ class Device:
         except usb.core.USBError:
             pass
 
-        r
+        return self
+
+    @stat
