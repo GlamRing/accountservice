@@ -116,4 +116,5 @@ class Device:
 
         return self
 
-    @stat
+    @staticmethod
+    def c
