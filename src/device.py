@@ -121,3 +121,4 @@ class Device:
         if test != gold:
             if type(test) == bytes:
                 test = "0x" + test.hex()
+            else:
