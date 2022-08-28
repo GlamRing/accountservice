@@ -119,4 +119,4 @@ class Device:
     @staticmethod
     def check(test, gold):
         if test != gold:
-       
+            if type(test) == 
