@@ -120,4 +120,4 @@ class Device:
     def check(test, gold):
         if test != gold:
             if type(test) == bytes:
-                te
+                test = "0x" + test.hex()
