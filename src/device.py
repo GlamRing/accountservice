@@ -118,4 +118,5 @@ class Device:
 
     @staticmethod
     def check(test, gold):
-        if
+        if test != gold:
+       
