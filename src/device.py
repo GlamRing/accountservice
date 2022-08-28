@@ -117,4 +117,5 @@ class Device:
         return self
 
     @staticmethod
-    def c
+    def check(test, gold):
+        if
