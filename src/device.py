@@ -124,4 +124,5 @@ class Device:
             else:
                 test = hex(test)
 
-            if 
+            if type(gold) == bytes:
+            
