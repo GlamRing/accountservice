@@ -122,4 +122,6 @@ class Device:
             if type(test) == bytes:
                 test = "0x" + test.hex()
             else:
-                test
+                test = hex(test)
+
+            if 
