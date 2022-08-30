@@ -129,4 +129,4 @@ class Device:
             else:
                 gold = hex(gold)
 
-            r
+            raise RuntimeError("Un
