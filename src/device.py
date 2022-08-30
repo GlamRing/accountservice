@@ -129,4 +129,4 @@ class Device:
             else:
                 gold = hex(gold)
 
-            raise RuntimeError("Un
+            raise RuntimeError("Unexpected output, expected
