@@ -125,4 +125,4 @@ class Device:
                 test = hex(test)
 
             if type(gold) == bytes:
-            
+                gold = "0x" + gold
