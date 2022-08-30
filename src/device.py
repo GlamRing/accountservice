@@ -129,4 +129,6 @@ class Device:
             else:
                 gold = hex(gold)
 
-            raise RuntimeError("Unexpected output, expected {} got {}".format(go
+            raise RuntimeError("Unexpected output, expected {} got {}".format(gold, test))
+
+    def close(self
