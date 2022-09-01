@@ -133,4 +133,5 @@ class Device:
 
     def close(self):
         self.dev = None
-        self.rx
+        self.rxbuffer = array.array('B')
+  
