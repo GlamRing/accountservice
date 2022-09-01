@@ -132,4 +132,5 @@ class Device:
             raise RuntimeError("Unexpected output, expected {} got {}".format(gold, test))
 
     def close(self):
-        self.dev = No
+        self.dev = None
+        self.rx
