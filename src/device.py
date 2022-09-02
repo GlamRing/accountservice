@@ -135,4 +135,4 @@ class Device:
         self.dev = None
         self.rxbuffer = array.array('B')
         try:
-            usb.util.release
+            usb.util.release_interface(self.udev, 0)
