@@ -137,4 +137,5 @@ class Device:
         try:
             usb.util.release_interface(self.udev, 0)
             usb.util.release_interface(self.udev, 1)
-        except
+        except Exception:
+            p
