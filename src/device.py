@@ -139,4 +139,5 @@ class Device:
             usb.util.release_interface(self.udev, 1)
         except Exception:
             pass
-        if not sel
+        if not self.usbdk:
+         
