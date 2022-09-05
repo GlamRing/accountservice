@@ -142,4 +142,5 @@ class Device:
         if not self.usbdk:
             try:
                 self.udev.reset()
-            exce
+            except Exception:
+     
