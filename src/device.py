@@ -145,4 +145,4 @@ class Device:
             except Exception:
                 pass
         try:
-            self.u
+            self.udev.attach_kernel_dr
