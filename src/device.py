@@ -144,4 +144,5 @@ class Device:
                 self.udev.reset()
             except Exception:
                 pass
-  
+        try:
+            self.u
