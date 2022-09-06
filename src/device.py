@@ -150,4 +150,5 @@ class Device:
             pass
         try:
             self.udev.attach_kernel_driver(1)
-        ex
+        except Exception:
+     
