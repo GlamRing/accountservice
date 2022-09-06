@@ -152,4 +152,5 @@ class Device:
             self.udev.attach_kernel_driver(1)
         except Exception:
             pass
-        if
+        if not self.usbdk:
+          
