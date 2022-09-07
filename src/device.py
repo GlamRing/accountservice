@@ -153,4 +153,5 @@ class Device:
         except Exception:
             pass
         if not self.usbdk:
-          
+            try:
+      
