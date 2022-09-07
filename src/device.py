@@ -154,4 +154,4 @@ class Device:
             pass
         if not self.usbdk:
             try:
-      
+                usb.util.d
