@@ -158,4 +158,6 @@ class Device:
             except Exception:
                 pass
         self.udev = None
-        time.sleep(
+        time.sleep(1)
+
+    def handsh
