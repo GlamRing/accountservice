@@ -156,4 +156,5 @@ class Device:
             try:
                 usb.util.dispose_resources(self.udev)
             except Exception:
-         
+                pass
+        self.u
