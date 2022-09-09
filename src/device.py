@@ -157,4 +157,5 @@ class Device:
                 usb.util.dispose_resources(self.udev)
             except Exception:
                 pass
-        self.u
+        self.udev = None
+        time.sleep(
