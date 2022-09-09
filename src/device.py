@@ -154,4 +154,5 @@ class Device:
             pass
         if not self.usbdk:
             try:
-                usb.util.dispose_resources(self.u
+                usb.util.dispose_resources(self.udev)
+            except Ex
