@@ -161,4 +161,6 @@ class Device:
         time.sleep(1)
 
     def handshake(self):
-        sequence = b"\xA
+        sequence = b"\xA0\x0A\x50\x05"
+        i = 0
+  
