@@ -160,4 +160,5 @@ class Device:
         self.udev = None
         time.sleep(1)
 
-    def handsh
+    def handshake(self):
+        sequence = b"\xA
