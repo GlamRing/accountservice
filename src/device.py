@@ -163,4 +163,4 @@ class Device:
     def handshake(self):
         sequence = b"\xA0\x0A\x50\x05"
         i = 0
-  
+        while i < len(sequence)
