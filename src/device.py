@@ -165,4 +165,5 @@ class Device:
         i = 0
         while i < len(sequence):
             self.write(sequence[i])
-            re
+            reply = self.read(1)
+    
