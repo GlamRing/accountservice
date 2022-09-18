@@ -169,4 +169,6 @@ class Device:
             if reply and reply[0] == ~sequence[i] & 0xFF:
                 i += 1
             else:
-                i =
+                i = 0
+
+    def echo(self, words, size=
