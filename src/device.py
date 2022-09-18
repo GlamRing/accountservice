@@ -166,4 +166,5 @@ class Device:
         while i < len(sequence):
             self.write(sequence[i])
             reply = self.read(1)
-            if reply and reply[0] == ~sequenc
+            if reply and reply[0] == ~sequence[i] & 0xFF:
+          
