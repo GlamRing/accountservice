@@ -171,4 +171,5 @@ class Device:
             else:
                 i = 0
 
-    def echo(self, words, size=
+    def echo(self, words, size=1):
+        self.write
