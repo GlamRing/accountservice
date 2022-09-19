@@ -173,4 +173,6 @@ class Device:
 
     def echo(self, words, size=1):
         self.write(words, size)
-        self.check(from_bytes(self.
+        self.check(from_bytes(self.read(size), size), words)
+
+ 
