@@ -172,4 +172,5 @@ class Device:
                 i = 0
 
     def echo(self, words, size=1):
-        self.write
+        self.write(words, size)
+        sel
