@@ -175,4 +175,5 @@ class Device:
         self.write(words, size)
         self.check(from_bytes(self.read(size), size), words)
 
-    def read(self,
+    def read(self, size=1):
+        offs
