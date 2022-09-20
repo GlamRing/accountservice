@@ -176,4 +176,5 @@ class Device:
         self.check(from_bytes(self.read(size), size), words)
 
     def read(self, size=1):
-        offs
+        offset = 0
+        data = b""
