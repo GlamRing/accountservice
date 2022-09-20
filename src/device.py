@@ -178,3 +178,4 @@ class Device:
     def read(self, size=1):
         offset = 0
         data = b""
+        while len(self.rx
