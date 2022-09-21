@@ -179,4 +179,5 @@ class Device:
         offset = 0
         data = b""
         while len(self.rxbuffer) < size:
-     
+            try:
+               
