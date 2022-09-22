@@ -180,4 +180,4 @@ class Device:
         data = b""
         while len(self.rxbuffer) < size:
             try:
-                self.rxbuffer.extend(self.ep_in.read(
+                self.rxbuffer.extend(self.ep_in.read(self.ep_in.wMaxPacket
