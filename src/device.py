@@ -182,4 +182,5 @@ class Device:
             try:
                 self.rxbuffer.extend(self.ep_in.read(self.ep_in.wMaxPacketSize, self.timeout * 1000))
             except usb.core.USBError as e:
-                if e
+                if e.errno == 110:
+                 
