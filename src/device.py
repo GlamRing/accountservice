@@ -187,4 +187,4 @@ class Device:
                 break
         if size <= len(self.rxbuffer):
             result = self.rxbuffer[:size]
-            self.rxbuffer = 
+            self.rxbuffer = self.rxbuffer[size:]
