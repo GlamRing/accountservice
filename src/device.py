@@ -184,4 +184,5 @@ class Device:
             except usb.core.USBError as e:
                 if e.errno == 110:
                     self.udev.reset()
-     
+                break
+       
