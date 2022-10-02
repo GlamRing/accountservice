@@ -186,4 +186,5 @@ class Device:
                     self.udev.reset()
                 break
         if size <= len(self.rxbuffer):
-            result = s
+            result = self.rxbuffer[:size]
+    
