@@ -185,4 +185,4 @@ class Device:
                 if e.errno == 110:
                     self.udev.reset()
                 break
-       
+        if size <= len(self.rxbuffer
