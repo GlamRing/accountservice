@@ -190,4 +190,4 @@ class Device:
             self.rxbuffer = self.rxbuffer[size:]
         else:
             result = self.rxbuffer
-            self
+            self.rxbuffer = array.
