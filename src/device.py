@@ -189,4 +189,4 @@ class Device:
             result = self.rxbuffer[:size]
             self.rxbuffer = self.rxbuffer[size:]
         else:
-      
+            result = self.rxbuff
