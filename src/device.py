@@ -194,4 +194,5 @@ class Device:
         return bytes(result)
 
     def read32(self, addr, size=1):
-      
+        result = []
+
