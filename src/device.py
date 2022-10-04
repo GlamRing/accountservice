@@ -196,4 +196,5 @@ class Device:
     def read32(self, addr, size=1):
         result = []
 
-        self.echo(0xD
+        self.echo(0xD1)
+        self.echo(addr,
