@@ -191,4 +191,4 @@ class Device:
         else:
             result = self.rxbuffer
             self.rxbuffer = array.array('B')
-        ret
+        return bytes(result)
