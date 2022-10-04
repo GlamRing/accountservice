@@ -197,4 +197,5 @@ class Device:
         result = []
 
         self.echo(0xD1)
-        self.echo(addr,
+        self.echo(addr, 4)
+        self.echo(
