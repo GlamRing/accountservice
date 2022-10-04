@@ -192,3 +192,5 @@ class Device:
             result = self.rxbuffer
             self.rxbuffer = array.array('B')
         return bytes(result)
+
+    def read32(sel
