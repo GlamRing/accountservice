@@ -198,4 +198,6 @@ class Device:
 
         self.echo(0xD1)
         self.echo(addr, 4)
-        self.echo(
+        self.echo(size, 4)
+
+        
