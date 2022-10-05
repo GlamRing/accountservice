@@ -200,4 +200,4 @@ class Device:
         self.echo(addr, 4)
         self.echo(size, 4)
 
-        
+        status = self.dev.read(2)
