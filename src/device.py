@@ -201,4 +201,5 @@ class Device:
         self.echo(size, 4)
 
         status = self.dev.read(2)
-        if from_bytes(statu
+        if from_bytes(status, 2) > 0xff:
+           
