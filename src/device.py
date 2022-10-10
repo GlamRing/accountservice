@@ -204,4 +204,4 @@ class Device:
         if from_bytes(status, 2) > 0xff:
             raise RuntimeError("status is {}".format(status.hex()))
 
-        
+        for _ in range(si
