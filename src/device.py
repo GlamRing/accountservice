@@ -205,4 +205,4 @@ class Device:
             raise RuntimeError("status is {}".format(status.hex()))
 
         for _ in range(size):
-            data = f
+            data = from_bytes(self.dev.r
