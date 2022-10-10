@@ -209,4 +209,4 @@ class Device:
             result.append(data)
 
         status = self.dev.read(2)
-        i
+        if from_bytes(st
