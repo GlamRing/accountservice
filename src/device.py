@@ -206,4 +206,6 @@ class Device:
 
         for _ in range(size):
             data = from_bytes(self.dev.read(4), 4)
-            result.append(d
+            result.append(data)
+
+        status = self.
