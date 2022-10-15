@@ -213,4 +213,5 @@ class Device:
             raise RuntimeError("status is {}".format(status.hex()))
 
         # support scalar
-        if len(result) == 
+        if len(result) == 1:
+            return result[0]
