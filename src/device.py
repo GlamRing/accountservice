@@ -210,4 +210,4 @@ class Device:
 
         status = self.dev.read(2)
         if from_bytes(status, 2) > 0xff:
-            raise RuntimeError("status is {}".format(st
+            raise RuntimeError("status is {}".format(status.hex()))
