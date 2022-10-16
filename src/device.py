@@ -222,4 +222,5 @@ class Device:
         if type(data) != bytes:
             data = to_bytes(data, size)
         offset = 0
-        while offset
+        while offset < len(data):
+ 
