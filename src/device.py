@@ -218,4 +218,4 @@ class Device:
         else:
             return result
 
-    def 
+    def write(self, dat
