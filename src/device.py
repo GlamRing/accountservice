@@ -216,4 +216,6 @@ class Device:
         if len(result) == 1:
             return result[0]
         else:
-          
+            return result
+
+    def 
