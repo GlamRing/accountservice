@@ -223,4 +223,4 @@ class Device:
             data = to_bytes(data, size)
         offset = 0
         while offset < len(data):
- 
+            self.ep_out.
