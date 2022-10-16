@@ -215,3 +215,5 @@ class Device:
         # support scalar
         if len(result) == 1:
             return result[0]
+        else:
+          
