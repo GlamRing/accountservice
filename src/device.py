@@ -218,4 +218,5 @@ class Device:
         else:
             return result
 
-    def write(self, dat
+    def write(self, data, size=1):
+        if t
