@@ -219,4 +219,5 @@ class Device:
             return result
 
     def write(self, data, size=1):
-        if t
+        if type(data) != bytes:
+            
