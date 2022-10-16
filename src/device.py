@@ -220,4 +220,4 @@ class Device:
 
     def write(self, data, size=1):
         if type(data) != bytes:
-            
+            data = to_bytes(data, s
