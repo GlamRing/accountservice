@@ -223,4 +223,4 @@ class Device:
             data = to_bytes(data, size)
         offset = 0
         while offset < len(data):
-            self.ep_out.write(data[offset:][:self.ep_out.wMaxPacketSize if len(data) - offset > self.ep_out.wMaxPacketSize else len(data) 
+            self.ep_out.write(data[offset:][:self.ep_out.wMaxPacketSize if len(data) - offset > self.ep_out.wMaxPacketSize else len(data) - offset], self.timeout *
