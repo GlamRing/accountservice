@@ -227,4 +227,4 @@ class Device:
             offset += self.ep_out.wMaxPacketSize
 
     def write32(self, addr, words, check_status=True):
-   
+        # support scalar
