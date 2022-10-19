@@ -226,4 +226,5 @@ class Device:
             self.ep_out.write(data[offset:][:self.ep_out.wMaxPacketSize if len(data) - offset > self.ep_out.wMaxPacketSize else len(data) - offset], self.timeout * 1000)
             offset += self.ep_out.wMaxPacketSize
 
-    def write32(self, addr, words, chec
+    def write32(self, addr, words, check_status=True):
+   
