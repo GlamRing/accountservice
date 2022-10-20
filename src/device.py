@@ -228,3 +228,4 @@ class Device:
 
     def write32(self, addr, words, check_status=True):
         # support scalar
+        if not isinstance(w
