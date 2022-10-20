@@ -231,4 +231,4 @@ class Device:
         if not isinstance(words, list):
             words = [words]
 
-     
+        self.echo(0xD4)
