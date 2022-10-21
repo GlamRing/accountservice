@@ -232,3 +232,4 @@ class Device:
             words = [words]
 
         self.echo(0xD4)
+        self.echo(addr, 4)
