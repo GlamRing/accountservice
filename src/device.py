@@ -233,4 +233,6 @@ class Device:
 
         self.echo(0xD4)
         self.echo(addr, 4)
-        self.echo(l
+        self.echo(len(words), 4)
+
+        self
