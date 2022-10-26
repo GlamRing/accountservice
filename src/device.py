@@ -235,4 +235,4 @@ class Device:
         self.echo(addr, 4)
         self.echo(len(words), 4)
 
-        self.check(self.dev.read(2)
+        self.check(self.dev.read(2), to_bytes(1, 2))  # arg c
