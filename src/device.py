@@ -238,4 +238,6 @@ class Device:
         self.check(self.dev.read(2), to_bytes(1, 2))  # arg check
 
         for word in words:
-            self.echo(
+            self.echo(word, 4)
+
+        if 
