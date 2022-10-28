@@ -240,4 +240,5 @@ class Device:
         for word in words:
             self.echo(word, 4)
 
-        if 
+        if check_status:
+            self.c
