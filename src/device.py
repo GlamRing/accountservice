@@ -241,4 +241,6 @@ class Device:
             self.echo(word, 4)
 
         if check_status:
-            self.check(self.dev.read(2), to_
+            self.check(self.dev.read(2), to_bytes(1, 2))  # status
+
+  
