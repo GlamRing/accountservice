@@ -243,4 +243,4 @@ class Device:
         if check_status:
             self.check(self.dev.read(2), to_bytes(1, 2))  # status
 
-  
+    def get_target_config(se
