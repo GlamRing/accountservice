@@ -247,4 +247,6 @@ class Device:
         self.echo(0xD8)
 
         target_config = self.dev.read(4)
-        s
+        status = self.dev.read(2)
+
+  
