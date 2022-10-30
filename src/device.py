@@ -246,4 +246,5 @@ class Device:
     def get_target_config(self):
         self.echo(0xD8)
 
-        target_config = s
+        target_config = self.dev.read(4)
+        s
