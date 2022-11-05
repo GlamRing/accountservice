@@ -253,3 +253,5 @@ class Device:
             raise RuntimeError("status is {}".format(status.hex()))
 
         target_config = from_bytes(target_config, 4)
+
+        secure_boot = t
