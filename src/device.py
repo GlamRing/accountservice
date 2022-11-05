@@ -255,4 +255,4 @@ class Device:
         target_config = from_bytes(target_config, 4)
 
         secure_boot = target_config & 1
-        s
+        serial_link_authorization 
