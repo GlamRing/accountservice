@@ -258,4 +258,5 @@ class Device:
         serial_link_authorization = target_config & 2
         download_agent_authorization = target_config & 4
 
-        # noinspection PyCa
+        # noinspection PyCallByClass
+        ret
