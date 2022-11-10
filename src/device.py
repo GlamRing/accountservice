@@ -256,4 +256,4 @@ class Device:
 
         secure_boot = target_config & 1
         serial_link_authorization = target_config & 2
-      
+        download_agent_authorizati
