@@ -259,4 +259,4 @@ class Device:
         download_agent_authorization = target_config & 4
 
         # noinspection PyCallByClass
-        return bool(secure_boot), bool(serial_link_authoriza
+        return bool(secure_boot), bool(serial_link_authorization), bool(download_a
