@@ -261,4 +261,5 @@ class Device:
         # noinspection PyCallByClass
         return bool(secure_boot), bool(serial_link_authorization), bool(download_agent_authorization)
 
-    def get_
+    def get_hw_code(self):
+        se
