@@ -264,4 +264,4 @@ class Device:
     def get_hw_code(self):
         self.echo(0xFD)
 
-        hw_c
+        hw_code = self.dev.
