@@ -264,4 +264,5 @@ class Device:
     def get_hw_code(self):
         self.echo(0xFD)
 
-        hw_code = self.dev.
+        hw_code = self.dev.read(2)
+        status = self.d
