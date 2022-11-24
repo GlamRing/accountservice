@@ -265,4 +265,6 @@ class Device:
         self.echo(0xFD)
 
         hw_code = self.dev.read(2)
-        status = self.d
+        status = self.dev.read(2)
+
+        if from_byte
