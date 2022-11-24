@@ -267,4 +267,5 @@ class Device:
         hw_code = self.dev.read(2)
         status = self.dev.read(2)
 
-        if from_byte
+        if from_bytes(status, 2) != 0:
+    
