@@ -270,4 +270,4 @@ class Device:
         if from_bytes(status, 2) != 0:
             raise RuntimeError("status is {}".format(status.hex()))
 
-  
+        return from_bytes
