@@ -273,4 +273,5 @@ class Device:
         return from_bytes(hw_code, 2)
 
     def get_hw_dict(self):
-      
+        self.echo(0xFC)
+
