@@ -275,4 +275,5 @@ class Device:
     def get_hw_dict(self):
         self.echo(0xFC)
 
-        hw_sub_code =
+        hw_sub_code = self.dev.read(2)
+    
