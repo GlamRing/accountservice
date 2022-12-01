@@ -278,4 +278,6 @@ class Device:
         hw_sub_code = self.dev.read(2)
         hw_ver = self.dev.read(2)
         sw_ver = self.dev.read(2)
-        status = self.dev.re
+        status = self.dev.read(2)
+
+        if from
