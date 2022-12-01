@@ -280,4 +280,4 @@ class Device:
         sw_ver = self.dev.read(2)
         status = self.dev.read(2)
 
-        if from
+        if from_bytes(status, 2
