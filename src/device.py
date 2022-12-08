@@ -283,4 +283,5 @@ class Device:
         if from_bytes(status, 2) != 0:
             raise RuntimeError("status is {}".format(status.hex()))
 
-        return from_bytes(hw_sub_code, 2), from_bytes(hw_ver, 2), from_byte
+        return from_bytes(hw_sub_code, 2), from_bytes(hw_ver, 2), from_bytes(sw_ver, 2)
+
