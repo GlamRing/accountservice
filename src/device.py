@@ -285,4 +285,5 @@ class Device:
 
         return from_bytes(hw_sub_code, 2), from_bytes(hw_ver, 2), from_bytes(sw_ver, 2)
 
-    def send_da(self, da_address, da_len, sig_len
+    def send_da(self, da_address, da_len, sig_len, da):
+        self.echo(0xD7)
