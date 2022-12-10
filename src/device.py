@@ -288,4 +288,5 @@ class Device:
     def send_da(self, da_address, da_len, sig_len, da):
         self.echo(0xD7)
 
-        self.echo(d
+        self.echo(da_address, 4)
+        self.ec
