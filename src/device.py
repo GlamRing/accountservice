@@ -289,4 +289,5 @@ class Device:
         self.echo(0xD7)
 
         self.echo(da_address, 4)
-        self.ec
+        self.echo(da_len, 4)
+      
