@@ -290,4 +290,4 @@ class Device:
 
         self.echo(da_address, 4)
         self.echo(da_len, 4)
-      
+        self.echo(sig_l
