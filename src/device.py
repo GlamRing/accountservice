@@ -292,4 +292,6 @@ class Device:
         self.echo(da_len, 4)
         self.echo(sig_len, 4)
 
-        status = self.
+        status = self.dev.read(2)
+
+        if
