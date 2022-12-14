@@ -295,4 +295,4 @@ class Device:
         status = self.dev.read(2)
 
         if from_bytes(status, 2) != 0:
-            raise Runtime
+            raise RuntimeError("status is {}".format(s
