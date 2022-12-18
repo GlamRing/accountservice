@@ -299,4 +299,4 @@ class Device:
 
         self.dev.write(da)
 
- 
+        checksum = self
