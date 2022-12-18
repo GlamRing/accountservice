@@ -299,4 +299,5 @@ class Device:
 
         self.dev.write(da)
 
-        checksum = self
+        checksum = self.dev.read(2)
+        
