@@ -302,4 +302,5 @@ class Device:
         checksum = self.dev.read(2)
         status = self.dev.read(2)
 
-        if from_bytes(statu
+        if from_bytes(status, 2) != 0:
+            
