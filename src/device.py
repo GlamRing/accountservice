@@ -300,4 +300,4 @@ class Device:
         self.dev.write(da)
 
         checksum = self.dev.read(2)
-        
+        status = self.dev.read(2
