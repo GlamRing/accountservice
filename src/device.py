@@ -307,4 +307,4 @@ class Device:
 
         return from_bytes(checksum, 2)
 
-    def 
+    def jump_da(self, da_
