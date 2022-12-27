@@ -308,4 +308,6 @@ class Device:
         return from_bytes(checksum, 2)
 
     def jump_da(self, da_address):
-        self.
+        self.echo(0xD5)
+
+        self.echo(d
