@@ -310,4 +310,6 @@ class Device:
     def jump_da(self, da_address):
         self.echo(0xD5)
 
-        self.echo(d
+        self.echo(da_address, 4)
+
+        
