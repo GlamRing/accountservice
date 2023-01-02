@@ -314,4 +314,5 @@ class Device:
 
         status = self.dev.read(2)
 
-        if from_bytes(
+        if from_bytes(status, 2) != 0:
+            r
