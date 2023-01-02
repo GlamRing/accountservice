@@ -312,4 +312,6 @@ class Device:
 
         self.echo(da_address, 4)
 
-        status = self.dev.read(2
+        status = self.dev.read(2)
+
+        if from_bytes(
