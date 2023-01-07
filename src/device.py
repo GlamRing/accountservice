@@ -318,4 +318,6 @@ class Device:
             raise RuntimeError("status is {}".format(status.hex()))
 
     def cmd_da(self, direction, offset, length, data=None, check_status = True):
-        self.ech
+        self.echo(0xDA)
+
+        self.echo(directio
