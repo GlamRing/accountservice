@@ -320,4 +320,6 @@ class Device:
     def cmd_da(self, direction, offset, length, data=None, check_status = True):
         self.echo(0xDA)
 
-        self.echo(directio
+        self.echo(direction, 4)
+        self.echo(offset, 4)
+   
