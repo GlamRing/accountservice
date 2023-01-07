@@ -322,4 +322,4 @@ class Device:
 
         self.echo(direction, 4)
         self.echo(offset, 4)
-   
+        self.echo(length
