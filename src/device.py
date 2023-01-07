@@ -317,4 +317,4 @@ class Device:
         if from_bytes(status, 2) != 0:
             raise RuntimeError("status is {}".format(status.hex()))
 
-    def cmd_da(self, direction, offse
+    def cmd_da(self, direction, offset, length, data=None, che
