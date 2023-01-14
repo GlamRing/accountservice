@@ -324,4 +324,4 @@ class Device:
         self.echo(offset, 4)
         self.echo(length, 4)
 
-        status =
+        status = self.dev.read(2)
