@@ -325,3 +325,5 @@ class Device:
         self.echo(length, 4)
 
         status = self.dev.read(2)
+
+        if from_bytes(status
