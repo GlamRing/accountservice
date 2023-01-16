@@ -330,4 +330,6 @@ class Device:
             raise RuntimeError("status is {}".format(status.hex()))
 
         if (direction & 1) == 1:
-            self.dev.writ
+            self.dev.write(data)
+        else:
+          
