@@ -329,4 +329,5 @@ class Device:
         if from_bytes(status, 2) != 0:
             raise RuntimeError("status is {}".format(status.hex()))
 
-        if (directio
+        if (direction & 1) == 1:
+  
