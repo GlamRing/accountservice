@@ -332,4 +332,4 @@ class Device:
         if (direction & 1) == 1:
             self.dev.write(data)
         else:
-          
+            data = self
