@@ -334,4 +334,5 @@ class Device:
         else:
             data = self.dev.read(length)
 
-  
+        if check_status:
+      
