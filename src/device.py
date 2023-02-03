@@ -335,4 +335,6 @@ class Device:
             data = self.dev.read(length)
 
         if check_status:
-            status = self.de
+            status = self.dev.read(2)
+
+          
