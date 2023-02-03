@@ -337,4 +337,4 @@ class Device:
         if check_status:
             status = self.dev.read(2)
 
-          
+            if from_bytes(stat
