@@ -1,1 +1,4 @@
-import
+import datetime
+
+
+def log
