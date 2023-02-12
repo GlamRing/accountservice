@@ -1,4 +1,5 @@
 import datetime
 
 
-def log
+def log(string):
+    line = "
