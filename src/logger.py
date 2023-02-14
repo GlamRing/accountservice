@@ -2,4 +2,4 @@ import datetime
 
 
 def log(string):
-    line = "[{}] {}".format(datetime.dat
+    line = "[{}] {}".format(datetime.datetime.now(), st
