@@ -5,4 +5,4 @@ def log(string):
     line = "[{}] {}".format(datetime.datetime.now(), string)
     print(line)
 
-    with open("bypas
+    with open("bypass_utility.log", "a
