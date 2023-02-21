@@ -6,4 +6,4 @@ def log(string):
     print(line)
 
     with open("bypass_utility.log", "a") as out:
-        ou
+        out.write(line + "\n")
